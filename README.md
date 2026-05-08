@@ -320,6 +320,3 @@ This project was developed as part of a capstone project to automate evolutionar
 
 ---
 
-## License
-
-This project is intended for academic and research use.
