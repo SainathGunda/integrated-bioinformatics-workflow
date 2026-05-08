@@ -1,0 +1,37 @@
+# Species ID used for this PSMC analysis
+species_id: "PD_0602"
+# Full scientific name of the species
+species_name: "Trachypithecus phayrei"
+# Input VCF file for this species
+vcf_file: "/app/inputs/psmc/PD_0602.variable.filtered.HF.snps.vcf.gz"
+# Reference genome FASTA file used to create the consensus sequence
+reference_genome: "/app/inputs/psmc/Rhinopithecus_roxellana-001.fasta"
+# Folder where PSMC outputs to be saved
+output_dir: "/app/outputs/psmc"
+
+# Parameters used by the PSMC
+psmc_params:
+    # Maximum number of iterations
+    N: 30
+    # Initial theta/rho ratio
+    t: 15
+    # Initial recombination/mutation rate ratio
+    r: 5
+    # Time interval pattern
+    p: "4+30*2+4+6"
+
+# Parameters used for plotting the PSMC result
+plot_params:
+    # Mutation rate used to scale the PSMC plot
+    mutation_rate: 2.5e-08
+    # Generation time in years
+    generation_time: 25
+    # Maximum value for the Y-axis
+    max_y: 2
+    # Minimum value for the X-axis
+    min_x: 10000
+    # Maximum value for the X-axis
+    max_x: 10000000
+
+# Email address that will receive pipeline completion notifications
+notify_to : "your_email@example.com"
