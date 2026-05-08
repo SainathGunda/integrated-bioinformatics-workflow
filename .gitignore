@@ -1,0 +1,10 @@
+.venv/
+inputs/
+sdm_modified.ipynb
+
+*.fa
+*.par
+*.psmc
+*.psmcfa
+*.tbi
+*.gz
